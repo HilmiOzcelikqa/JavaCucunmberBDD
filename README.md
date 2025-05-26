@@ -44,8 +44,8 @@ Bu proje, bir e-ticaret platformunda kullanıcı girişi yaparak ürün arama, f
 ### 2. Projeyi Klonlayın
 
 ```bash
-git clone https://github.com/HilmiOzcelikqa/assesmentbdd.git
-cd assesmentbdd
+https://github.com/HilmiOzcelikqa/JavaCucunmberBDD.git
+
 ```
 
 ### 3. Testleri Çalıştırın
