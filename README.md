@@ -3,6 +3,8 @@
 
 Bu proje, bir e-ticaret platformunda kullanıcı girişi yaparak ürün arama, filtreleme ve sepete ürün ekleme gibi işlemleri UI otomasyon testleri ile gerçekleştirmektedir. Testler, **BDD (Behavior Driven Development)** yaklaşımıyla **Java + Cucumber** kullanılarak yazılmıştır.
 
+API testi için oluşturulan request ve response json dosyaları API package altına eklenmiştir.
+
 ## 🎯 Test Senaryosu Özeti
 
 1. Kullanıcı e-ticaret sitesini ziyaret eder.

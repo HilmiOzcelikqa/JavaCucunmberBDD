@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="44.741" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Adding a product to the cart" name="Add Correct Product To The Cart" time="44.559">
+<testsuite name="Cucumber" time="44.009" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Adding a product to the cart" name="Add Correct Product To The Cart" time="43.797">
 <system-out><![CDATA[
 Given User fills the username and password fields with correct credentials..passed
 Then User logins successfully...............................................passed
