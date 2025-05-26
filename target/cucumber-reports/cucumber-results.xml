@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="44.741" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Adding a product to the cart" name="Add Correct Product To The Cart" time="44.559">
+<system-out><![CDATA[
+Given User fills the username and password fields with correct credentials..passed
+Then User logins successfully...............................................passed
+Given User searchs for product..............................................passed
+And User arrange price filter...............................................passed
+And User choose the product at the bottom of list and go to product details.passed
+And User choose the product which belongs to the worst rated seller and adds to the cart.passed
+Then User checks if the correct product added to the cart...................passed
+]]></system-out>
+</testcase>
+</testsuite>

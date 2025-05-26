@@ -1,0 +1,10 @@
+version: '3'
+services:
+  test:
+    build: .
+    volumes:
+      - ./target:/app/target
+    environment:
+      - DISPLAY=:99
+      - CHROME_BIN=/usr/bin/google-chrome
+    shm_size: '2gb' 
