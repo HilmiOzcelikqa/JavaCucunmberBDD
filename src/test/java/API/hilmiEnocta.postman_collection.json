@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "78e088ef-fb8d-4b73-9439-2dab1c6edbdd",
+		"name": "hilmiEnocta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26824905"
+	},
+	"item": [
+		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/token",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://fac9a5c9-830c-44ad-bc2f-70fb9debfb33.mock.pstmn.io/token",
+							"protocol": "https",
+							"host": [
+								"fac9a5c9-830c-44ad-bc2f-70fb9debfb33",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n  \"token\": \"abc123\"\n}"
+				},
+				{
+					"name": "token",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "user",
+								"value": "aaa",
+								"type": "text"
+							},
+							{
+								"key": "pass",
+								"value": "111",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/token",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 25 May 2025 20:31:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "23"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=782ad3a689927374"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=5d01e9a50ad750d6"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "119"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1748205161"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"17-GWDj7ed+jHEJHYvo7hEMMx6+rhM\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"token\": \"abc123\"\n}"
+				}
+			]
+		},
+		{
+			"name": "viewInvoice",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/viewInvoice?barcode={barcode}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"viewInvoice"
+					],
+					"query": [
+						{
+							"key": "barcode",
+							"value": "{barcode}"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://fac9a5c9-830c-44ad-bc2f-70fb9debfb33.mock.pstmn.io/viewInvoice",
+							"protocol": "https",
+							"host": [
+								"fac9a5c9-830c-44ad-bc2f-70fb9debfb33",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"viewInvoice"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{ InvoiceLink:\n\"http://abc.com/invoice.pdf\", Result: {success: true}"
+				}
+			]
+		},
+		{
+			"name": "sendInvoice",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{Barcode: {barcode}} "
+				},
+				"url": {
+					"raw": "{{url}}/sendInvoice",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"sendInvoice"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{Barcode: {barcode}} "
+						},
+						"url": {
+							"raw": "https://fac9a5c9-830c-44ad-bc2f-70fb9debfb33.mock.pstmn.io/sendInvoice",
+							"protocol": "https",
+							"host": [
+								"fac9a5c9-830c-44ad-bc2f-70fb9debfb33",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"sendInvoice"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://fac9a5c9-830c-44ad-bc2f-70fb9debfb33.mock.pstmn.io"
+		}
+	]
+}
